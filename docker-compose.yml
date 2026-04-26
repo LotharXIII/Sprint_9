@@ -1,4 +1,4 @@
-version: '3.5'
+
 services:
   
   selenoid:
@@ -21,7 +21,7 @@ services:
     environment:
       - OVERRIDE_VIDEO_OUTPUT_DIR=./selenoid/video
       - DOCKER_API_VERSION=1.54
-    command: ["-conf", "/etc/selenoid/browsers.json", "-container-network", "selenoid", "-pull-images"]
+    command: ["-conf", "/etc/selenoid/browsers.json", "-container-network", "selenoid"]
     
 
   
